@@ -22,6 +22,10 @@ BEGIN
                 "0000000" WHEN "1000", -- 8
                 "0010000" WHEN "1001", -- 9
                 "0001000" WHEN "1010", -- A
+ taller_counter_dff_ascendente
+                "0000011" WHEN "1011", -- b
+                "1000110" WHEN "1100", -- C
+                "0100001" WHEN "1101", -- d
  taller_counter_dff_descendete
                 "0000011" WHEN "1011", -- b
                 "1000110" WHEN "1100", -- C
@@ -29,6 +33,7 @@ BEGIN
                 "0000011" WHEN "1011", -- B
                 "1000110" WHEN "1100", -- C
                 "0100001" WHEN "1101", -- D
+ main
  main
                 "0000110" WHEN "1110", -- E
                 "0001110" WHEN OTHERS; -- F
