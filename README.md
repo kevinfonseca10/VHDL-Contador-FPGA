@@ -29,25 +29,25 @@ Se implementaron tres módulos de contador independientes:
 
 ## Estructura del Repositorio
 
-El proyecto está organizado en tres carpetas, cada una conteniendo un proyecto de Quartus completo y funcional:
+Este repositorio contiene 3 proyectos de Quartus independientes, organizados en las siguientes carpetas. Cada carpeta es un experimento autocontenido.
 
-/
-├── 📁 ascendente/
-│   ├── counter_ascendente.vhd
-│   ├── contador_top_ascendente.vhd
-│   └── ... (archivos de proyecto y simulación)
-│
-├── 📁 descendente/
-│   ├── counter_descendente.vhd
-│   ├── contador_top_descendente.vhd
-│   └── ... (archivos de proyecto y simulación)
-│
-└── 📁 controlado/
-├── counter_modulo_N.vhd
-├── contador_top.vhd
-└── ... (archivos de proyecto y simulación)
+### 📁 `/controlado`
+Contiene el proyecto para un contador BCD que cuenta de **0 a 9** y se reinicia.
+* **Archivos VHDL:** `counter_modulo_N.vhd`, `contador_top.vhd`, `bin_to_sseg.vhd`
+* **Configuración:** `counter_modulo_N.qsf`
+
+### 📁 `/ascendente`
+Contiene el proyecto para un contador binario *free-run* que cuenta de **0 a 15 (F)**.
+* **Archivos VHDL:** `counter_ascendente.vhd`, `contador_top_ascendente.vhd`, `bin_to_sseg.vhd`
+* **Configuración:** `counter_ascendente.qsf`
+
+### 📁 `/descendente`
+Contiene el proyecto para un contador binario que cuenta de forma descendente de **15 (F) a 0**.
+* **Archivos VHDL:** `counter_descendente.vhd`, `contador_top_descendente.vhd`, `bin_to_sseg.vhd`
+* **Configuración:** `counter_descendente.qsf`
 
 ---
+
 
 ## Componentes VHDL Principales
 
